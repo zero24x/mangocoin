@@ -1,0 +1,9 @@
+Building MangoCoin
+
+See doc/readme-qt.rst for instructions on building MangoCoin QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of MangoCoin.
+
+See doc/build-*.txt for instructions on building MangoCoind,
+the intended-for-services, no-graphical-interface, reference
+implementation of MangoCoin.
