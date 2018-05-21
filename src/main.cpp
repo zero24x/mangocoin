@@ -39,14 +39,14 @@ CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
 CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 16);
 CBigNum bnProofOfWorkFirstBlock(~uint256(0) >> 30);
 
-unsigned int nTargetSpacing = 2 * 60; // 2 minutes
+unsigned int nTargetSpacing = 3 * 60; // 3 minutes
 unsigned int nRetarget = 10;
 unsigned int nStakeMinAge = -1; // disabled
 unsigned int nStakeMaxAge = -1;           //unlimited
 unsigned int nModifierInterval = 10 * 60; // time to elapse before new modifier is computed
 static const int64_t nTargetTimespan_legacy = nTargetSpacing * nRetarget; // every 50 blocks
 static const int64_t nInterval = nTargetTimespan_legacy / nTargetSpacing;
-int nCoinbaseMaturity = 5;
+int nCoinbaseMaturity = 12;
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
 
@@ -976,7 +976,7 @@ int64_t GetProofOfWorkReward(int64_t nFees)
 	if (maxSupplyReached())
 		return nFees;
 
-    int64_t nSubsidy = 100 * COIN;
+    int64_t nSubsidy = 500 * COIN;
 
 	if(pindexBest->nHeight+1 <= 5)
     {
