@@ -2,12 +2,12 @@
 
 Coin is a X11 PoW cryptocurrency
 
-*Algo: X11
-*Blocktime: 3 Minutes
-*Premine: 5 Billion
-*Max supply: 50 Billion
-*Maturity: 12 Blocks
-*Recommended confirmations: 6 Blocks
+* Algo: X11
+* Blocktime: 3 Minutes
+* Premine: 5 Billion
+* Max supply: 50 Billion
+* Maturity: 12 Blocks
+* Recommended confirmations: 6 Blocks
 
 Block rewards:
 
